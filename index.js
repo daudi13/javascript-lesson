@@ -1,4 +1,5 @@
 //function declaration
+/*
 const myAge = calcAge1(1994);
 function calcAge1(birthYear) {
     const age = 2037 - birthYear;
@@ -26,11 +27,11 @@ console.log(age3)
 
 //years left until retirement
 
-const yearsToRetirement = (birthYear, firstName) => {
-    const age = 2021 - birthYear;
-    const retirement = 65 - age;
-    return `${firstName} still has ${retirement} years to leave his blistering career`
-}
+// const yearsToRetirement = (birthYear, firstName) => {
+//     const age = 2021 - birthYear;
+//     const retirement = 65 - age;
+//     return `${firstName} still has ${retirement} years to leave his blistering career`
+// }
 
 const yearsLeft = yearsToRetirement(1994, "Matthew");
 console.log(yearsLeft);
@@ -52,3 +53,21 @@ function fruitProcessor(apples, oranges) {
 
 const myJuice = fruitProcessor(0, 5);
 console.log(myJuice);
+
+*/
+
+
+//converting function types
+const age = calcAge1(birthYear) {
+    return 2021-birthYear;
+};
+
+const yearsToRetirement = function (birthYear) {
+    const age = calcAge1(birthYear);
+    const retirement = 65 - age;
+    return `${firstName} still has ${retirement} years to leave his blistering career`;
+}
+
+const myretirement = yearsToRetirement(1991, 'Ludwig');
+
+console.log(myretirement);
