@@ -56,6 +56,7 @@ console.log(myJuice);
 
 */
 
+/*
 
 //converting function types
 function calcAge(birthYear) {
@@ -73,4 +74,31 @@ const yearsToRetirement = function (birthYear, firstName) {
 }
 
 const myretirement = yearsToRetirement(1961, 'Ludwig');
+*/
 
+
+//coding challenges 
+
+function calcAverage(a, b, c) {
+    const average = (a + b + c) / 3;
+    return average;
+}
+
+const dolphinsScore = calcAverage(85, 54, 41);
+const koalasScore = calcAverage(23, 34, 27);
+
+// console.log(dolphinsScore);
+// console.log(koalasScore);
+
+function checkWinner(dolphinsScore, koalasScore) {
+
+    if (dolphinsScore > koalasScore) {
+        console.log(`dolphins win (${dolphinsScore} vs ${koalasScore})`);
+    }
+
+    else {
+        console.log(`koalas win (${koalasScore} vs ${dolphinsScore})`)
+    }
+}
+
+checkWinner(dolphinsScore, koalasScore);
