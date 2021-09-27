@@ -76,6 +76,7 @@ const yearsToRetirement = function (birthYear, firstName) {
 const myretirement = yearsToRetirement(1961, 'Ludwig');
 */
 
+/*
 
 //coding challenges 
 
@@ -106,3 +107,28 @@ function checkWinner(avgDolphins, avgKoalas) {
 }
 
 checkWinner(dolphinsScore, koalasScore);
+*/
+
+//coding challenge #2
+
+function calcTip(bill) {
+    if (bill >= 50 && bill <= 300) {
+        return bill * 15 / 100;
+    } else {
+        return bill * 20 / 100;
+    }
+};
+
+const bill1 = calcTip(100)
+
+console.log(bill1)
+
+const bills = new Array(125, 555, 44);
+
+const tip1 = calcTip(bills[0]);
+const tip2 = calcTip(bills[1]);
+const tip3 = calcTip(bills[2]);
+
+const tips = [tip1, tip2, tip3]
+
+console.log(tips);
