@@ -1,12 +1,12 @@
 //function declaration
-/*
-const myAge = calcAge1(1994);
+
+// const myAge = calcAge1(1994);
 function calcAge1(birthYear) {
     const age = 2037 - birthYear;
     return age;
 }
 
-
+/*
 
 //function expression
 
@@ -58,16 +58,19 @@ console.log(myJuice);
 
 
 //converting function types
-const age = calcAge1(birthYear) {
-    return 2021-birthYear;
-};
-
-const yearsToRetirement = function (birthYear) {
-    const age = calcAge1(birthYear);
-    const retirement = 65 - age;
-    return `${firstName} still has ${retirement} years to leave his blistering career`;
+function calcAge(birthYear) {
+    return 2021 - birthYear
 }
 
-const myretirement = yearsToRetirement(1991, 'Ludwig');
+const yearsToRetirement = function (birthYear, firstName) {
+    const age = calcAge1 (birthYear);
+    const retirement = 65 - age;
+    if (retirement>0) {
+        console.log(`${firstName} retires in ${retirement} years`);
+    } else {
+        console.log(`${firstName} has already retired`)
+    }
+}
 
-console.log(myretirement);
+const myretirement = yearsToRetirement(1961, 'Ludwig');
+
