@@ -84,7 +84,7 @@ function calcAverage(a, b, c) {
     return average;
 }
 
-const dolphinsScore = calcAverage(85, 54, 41);
+const dolphinsScore = calcAverage(4, 23, 71);
 const koalasScore = calcAverage(23, 34, 27);
 
 // console.log(dolphinsScore);
@@ -92,12 +92,16 @@ const koalasScore = calcAverage(23, 34, 27);
 
 function checkWinner(dolphinsScore, koalasScore) {
 
-    if (dolphinsScore > koalasScore) {
+    if (dolphinsScore >= 2 * koalasScore) {
         console.log(`dolphins win (${dolphinsScore} vs ${koalasScore})`);
     }
 
-    else {
+    else if(koalasScore >= 2* dolphinsScore) {
         console.log(`koalas win (${koalasScore} vs ${dolphinsScore})`)
+    }
+
+    else {
+        console.log(`Nobody won`)
     }
 }
 
