@@ -119,7 +119,7 @@ function calcTip(bill) {
     }
 };
 
-const bill1 = calcTip(100)
+const bill1 = calcTip(100);
 
 console.log(bill1)
 
@@ -129,6 +129,9 @@ const tip1 = calcTip(bills[0]);
 const tip2 = calcTip(bills[1]);
 const tip3 = calcTip(bills[2]);
 
-const tips = [tip1, tip2, tip3]
+const tips = [tip1, tip2, tip3];
 
-console.log(tips);
+const total = new Array(tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]);
+
+console.log(total);
+
