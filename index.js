@@ -171,5 +171,6 @@ function compareBMI() {
 
 
 const compare = compareBMI();
-
 console.log(compare)
+
+//no code today
