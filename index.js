@@ -110,7 +110,7 @@ checkWinner(dolphinsScore, koalasScore);
 */
 
 //coding challenge #2
-
+/*
 function calcTip(bill) {
     if (bill >= 50 && bill <= 300) {
         return bill * 15 / 100;
@@ -176,3 +176,24 @@ console.log(compare)
 //no code today
 //no code today
 //no code today
+*/
+
+//coding challenge #4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const total = new Array();
+
+function calcTip(bill) {
+    if (bill >= 50 && bill <= 300) {
+        return bill * 15 / 100;
+    } else {
+        return bill * 20 / 100;
+    }
+};
+
+for (let i = 0; i < bills.length; i++){
+    const tip = calcTip(bills[i]);
+    total.push(tip + bills[i])
+}
+
+console.log(total)
