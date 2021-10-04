@@ -224,7 +224,7 @@ const maxTemp = function (tempArr) {
     for (let i = 0; i < tempArr.length; i++) {
         if (tempArr[i] > max) {
             max = tempArr[i];
-        } else if (tempArr[i] !== 'string') continue;
+        } else if (typeof tempArr[i] !== 'number') continue;
     }
 
     console.log(max)
@@ -237,7 +237,7 @@ const minTemp = function (tempArr) {
     for (let i = 0; i < tempArr.length; i++){
         if (tempArr[i] < min) {
             min = tempArr[i];
-        } else if (tempArr[i] !== 'string') continue;
+        } else if (typeof tempArr[i] !== 'number') continue;
     }
 
     console.log(min);
@@ -247,7 +247,10 @@ const minTemp = function (tempArr) {
 minTemp(temperatures);
 
 
+const diff = function (arr) {
+    return maxTemp(arr) - minTemp(arr);
+}
 
-// const tempDiff = function (tempArr) {
-//     const diff =  maxTemp(tem)
-// }
+const amplitutde = diff(temperatures);
+
+console.log(amplitutde);
