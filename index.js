@@ -218,7 +218,7 @@ calcAverage(bills);
 
 const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 
-const tempAmplitude = function (tempArr) {
+const maxTemp = function (tempArr) {
     let max = 0;
 
     for (let i = 0; i < tempArr.length; i++) {
@@ -230,5 +230,17 @@ const tempAmplitude = function (tempArr) {
     console.log(max);
 }
 
+const minTemp = function (tempArr) {
+    let min = 0;
 
-tempAmplitude(temperatures);
+    for (let i = 0; i < tempArr.length; i++){
+        if (tempArr[i] < min) {
+            min = tempArr[i];
+        } else if (tempArr[i] !== 'string') continue;
+    }
+
+
+    console.log(min);
+}
+
+
