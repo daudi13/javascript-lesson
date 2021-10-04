@@ -177,6 +177,7 @@ console.log(compare)
 //no code today
 //no code today
 */
+/*
 
 //coding challenge #4
 
@@ -209,4 +210,25 @@ const calcAverage = function (arr) {
     console.log(sum);
 }
 
-calcAverage(bills);
+calcAverage(bills); 
+
+*/
+
+//finding the temperature amplitude
+
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+
+const tempAmplitude = function (tempArr) {
+    let max = 0;
+
+    for (let i = 0; i < tempArr.length; i++) {
+        if (tempArr[i] > max) {
+            max = tempArr[i];
+        } else if (tempArr[i] !== 'string') continue;
+    }
+
+    console.log(max);
+}
+
+
+tempAmplitude(temperatures);
