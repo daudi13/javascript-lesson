@@ -254,3 +254,24 @@ const diff = function (arr) {
 const amplitutde = diff(temperatures);
 
 console.log(amplitutde);
+
+//problem 2;
+
+//functions should now receive 2 arrays of temps
+
+const calcTempAmplitude = function (t1, t2) {
+    const newTempArr = t1.concat(t2)
+
+    let max = 0;
+    let min = 0;
+    for (let i = 0; i < newTempArr.length; i++){
+        if (newTempArr[i] > max) max = newTempArr[i];
+        if (newTempArr[i] < min) min = newTempArr[i];
+        else if (typeof newTempArr === 'number') continue;
+    }
+
+    console.log(max, min)
+}
+
+calcTempAmplitude([1, 4, 8, -1, 4], [5, 8, 9, 4]);
+
