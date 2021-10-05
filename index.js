@@ -270,7 +270,7 @@ const calcTempAmplitude = function (t1, t2) {
         else if (typeof newTempArr === 'number') continue;
     }
 
-    console.log(max, min)
+    return max - min
 }
 
 calcTempAmplitude([1, 4, 8, -1, 4], [5, 8, 9, 4]);
