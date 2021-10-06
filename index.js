@@ -216,6 +216,8 @@ calcAverage(bills);
 
 //finding the temperature amplitude
 
+/*
+
 const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 
 const maxTemp = function (tempArr) {
@@ -275,3 +277,20 @@ const calcTempAmplitude = function (t1, t2) {
 
 calcTempAmplitude([1, 4, 8, -1, 4], [5, 8, 9, 4]);
 
+*/
+
+//given an array of forecasted maximum temperatures, the thermometer displays a string with those temperatures.
+//crete a function 'printForecast' which takes in an array 'arr' and logs a string like the above to the console.
+
+
+const printForecast = function (arr) {
+    for (let i = 0; i < arr.length; i++){
+        
+        console.log(`${arr[i]}c in ${i + 1} day${i+1>1?"s": ""} ${i+1 === arr.length? '': '...'}`)
+
+    }
+
+    
+}
+
+printForecast([17, 21, 23]);
