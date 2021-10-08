@@ -283,6 +283,9 @@ calcTempAmplitude([1, 4, 8, -1, 4], [5, 8, 9, 4]);
 //crete a function 'printForecast' which takes in an array 'arr' and logs a string like the above to the console.
 
 
+
+const dataset = [17, 21, 23];
+const dataset2 = [12, 5, -5, 0, 4];
 const printForecast = function (arr) {
     for (let i = 0; i < arr.length; i++){
         
@@ -293,4 +296,5 @@ const printForecast = function (arr) {
     
 }
 
-printForecast([17, 21, 23]);
+printForecast(dataset);
+
